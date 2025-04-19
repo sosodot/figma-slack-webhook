@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3000;
 const SLACK_WEBHOOK_URL = process.env.SLACK_WEBHOOK_URL;
 
 app.get('/', async (req, res) => {
-  return res.status(200).send(JSON.stringify({message: "this are not the unicorns you're looking for"}))
+  return res.status(200).send(JSON.stringify({message: "these are not the unicorns you're looking for"}))
 });
 
 app.post('/webhook', async (req, res) => {
